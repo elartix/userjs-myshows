@@ -19,5 +19,5 @@ Sort serials in alphabetic order on http://myshows.me/profile/
     * ***OPERA 15+***: Install [Tampermonkey](https://addons.opera.com/en/extensions/details/tampermonkey-beta/).
     * ***OPERA 12 (and below)***: Follow instructions located on Opera's site: [User JS](http://www.opera.com/docs/userjs/using/#writingscripts) or try [Violentmonkey](https://addons.opera.com/en-gb/extensions/details/violent-monkey/).
     * ***SAFARI***: Install [NinjaKit](http://d.hatena.ne.jp/os0x/20100612/1276330696).
-2. Install the user script by clicking here: [myshows-profile-sort.user.js](https://github.com/powerman/userjs-myshows/raw/master/myshows-profile-sort.user.js).
+2. Install the user script by clicking here: [myshows-profile-sort.user.js](https://github.com/elartix/userjs-myshows/raw/master/myshows-profile-sort.user.js).
    You can also install it from [GreasyFork](https://greasyfork.org/scripts/2517-myshows-sort-serials).

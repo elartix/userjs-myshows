@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name        MyShows: sort serials
-// @namespace   https://github.com/powerman/userjs-myshows
+// @namespace   https://github.com/elartix/userjs-myshows
 // @description Sort serials in alphabetic order on myshows.me
 // @include     http://myshows.me/profile/
 // @match       http://myshows.me/profile/
-// @downloadURL https://github.com/powerman/userjs-myshows/raw/master/myshows-profile-sort.user.js
-// @updateURL   https://github.com/powerman/userjs-myshows/raw/master/myshows-profile-sort.user.js
+// @downloadURL https://github.com/elartix/userjs-myshows/raw/master/myshows-profile-sort.user.js
+// @updateURL   https://github.com/elartix/userjs-myshows/raw/master/myshows-profile-sort.user.js
 // @version     3.1
 // @grant       none
 // ==/UserScript==
@@ -42,9 +42,14 @@ window.addEventListener('load', function(){
 		// ... and move AD to the end
 		$('main hr').prevUntil('.seasonBlock, p, h2, h1').andSelf().remove().appendTo('main');
 	}
+	
+	function applyCustomColors(){
+		$('.showHeaderName a').css('color', '#b00000');
+	}
 
 	var rate_handler = jQuery._data($('.rate-episode').get(0)).events.click[0].handler;
 	sort_shows();
+	applyCustomColors();
 	$('.rate-episode').bind('click', rate_handler);
 	// from document.ready handler
 	$('div.seasonBlock').each(function () {
